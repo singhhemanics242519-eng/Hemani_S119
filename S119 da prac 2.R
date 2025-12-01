@@ -1,0 +1,5 @@
+spotify <- read.csv("spotify_data clean.csv", stringsAsFactors=TRUE)
+View(spotify)
+names(spotify)
+lm(track_popularity ~ track_duration_min, data = spotify)
+summary(lm(track_popularity ~ track_duration_min, data = spotify))
